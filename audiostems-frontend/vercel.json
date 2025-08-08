@@ -1,20 +1,13 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": ".next",
   "framework": "nextjs",
-  "installCommand": "npm install",
-  "devCommand": "npm run dev -- -p 3002",
-  "env": {
-    "NODE_ENV": "production"
-  },
-  "build": {
-    "env": {
-      "NODE_ENV": "production"
-    }
-  },
+  "buildCommand": "npm run build",
+  "installCommand": "npm install --legacy-peer-deps",
   "functions": {
     "pages/api/**/*.js": {
-      "runtime": "nodejs18.x"
+      "runtime": "nodejs20.x"
     }
+  },
+  "env": {
+    "NODE_ENV": "production"
   }
 }
