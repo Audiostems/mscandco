@@ -1,4 +1,4 @@
-import { useAuth0 } from '@auth0/auth0-react';
+import { useAuth0 } from '../../lib/auth0-stub';
 import { Button } from 'flowbite-react';
 
 export default function LoginButton({ className = '', children = 'Log In' }) {
